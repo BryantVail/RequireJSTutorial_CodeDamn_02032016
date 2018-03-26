@@ -1,0 +1,22 @@
+{
+  "name": "require-js-tutorial_codedamn-02032016",
+  "version": "1.0.0",
+  "description": "require.js tutorial 2016",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantVail/RequireJSTutorial_CodeDamn_02032016.git"
+  },
+  "author": "Bryant Vail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantVail/RequireJSTutorial_CodeDamn_02032016/issues"
+  },
+  "homepage": "https://github.com/BryantVail/RequireJSTutorial_CodeDamn_02032016#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
