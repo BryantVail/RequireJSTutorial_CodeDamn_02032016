@@ -10,16 +10,16 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script data-main="scripts/config" src="requirejs/require_2-3-5.js"></script>
 </head>
 <body>
-    <!-- what happens when dependencies change between all of our JS files?-->
-    <script src="1.js"></script>
-    <script src="2.js"></script>
-    <script src="3.js"></script>
-    <script src="4.js"></script>
-    <script src="5.js"></script>
-    <script src="6.js"></script>
-    <script src="7.js"></script>
+    <script>
+        require(["config"], function(){
+            /*
+            *   all code that needs to run after the 'config.js' file runs will go here
+            */
+        });
+    </script>
 
 </body>
 </html>
