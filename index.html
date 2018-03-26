@@ -10,14 +10,18 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <script data-main="scripts/config" src="requirejs/require_2-3-5.js"></script>
+    
 </head>
 <body>
+    <script data-main="scripts/config" src="requirejs/require_2-3-5.js"></script>
     <script>
+        //since config.js is the data-main file, it will be loaded even if not explicitly targeted in the 'require(["config"],function(){ statement
+        alert("before config keyword");
         require(["config"], function(){
             /*
             *   all code that needs to run after the 'config.js' file runs will go here
             */
+           alert("after config keyword");
         });
     </script>
 
